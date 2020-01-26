@@ -221,7 +221,9 @@ def winning_team
   teams.each{|team|
     game_hash[team][:players].each{ |player|
       if game_hash[team] == game_hash[:home]
-        most_points = player[:points]
+        home_score += player[:points]
+      else
+        away_score += player[:points]
       end
     }
   }
