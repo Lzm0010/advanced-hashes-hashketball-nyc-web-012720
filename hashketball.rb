@@ -250,7 +250,7 @@ def most_steals
   teams.each{|team|
     game_hash[team][:players].each{ |player|
       if player[:steals] > most_steals
-        most_steals = player[:points]
+        most_steals = player[:steals]
       end
     }
   }
