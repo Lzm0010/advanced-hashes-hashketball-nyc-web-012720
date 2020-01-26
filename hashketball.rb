@@ -236,8 +236,8 @@ def player_with_longest_name
   teams = [:home, :away]
   teams.each{|team|
     game_hash[team][:players].each{ |player|
-      if player[:player_name].length > longest_name
-        largest_shoe = player[:shoe]
+      if player[:player_name].length > longest_name.length
+        longest_name = player[:player_name]
       end
     }
   }
