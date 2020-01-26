@@ -200,7 +200,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  
+  most_points = 0
 end
 
 def winning_team
