@@ -215,7 +215,8 @@ def most_points_scored
 end
 
 def winning_team
-  
+  home_score = 0
+  away_score = 0
 end
 
 def player_with_longest_name
