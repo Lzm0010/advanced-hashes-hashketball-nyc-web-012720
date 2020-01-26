@@ -201,6 +201,7 @@ end
 
 def most_points_scored
   most_points = 0
+  teams[:home. :away]
 end
 
 def winning_team
