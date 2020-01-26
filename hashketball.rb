@@ -208,6 +208,8 @@ def most_points_scored
         most_points = player[:points]
     }
   }
+  
+  current_player = get_player(:points, most_points)
 end
 
 def winning_team
