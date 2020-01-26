@@ -232,7 +232,14 @@ def winning_team
 end
 
 def player_with_longest_name
-  
+  teams = [:home, :away]
+  teams.each{|team|
+    game_hash[team][:players].each{ |player|
+      if player[:shoe] > largest_shoe
+        largest_shoe = player[:shoe]
+      end
+    }
+  }
 end
 
 def long_name_steals_a_ton?
