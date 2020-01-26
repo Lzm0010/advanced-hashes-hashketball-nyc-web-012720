@@ -228,6 +228,7 @@ def winning_team
     }
   }
   
+  home_score > away_score ? game_hash[:home][:team_name]
 end
 
 def player_with_longest_name
