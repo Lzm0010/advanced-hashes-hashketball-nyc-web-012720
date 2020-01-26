@@ -216,7 +216,7 @@ end
 
 def winning_team
   home_score = 0
-  away_score = 100
+  away_score = 0
   teams = [:home, :away]
   teams.each{|team|
     game_hash[team][:players].each{ |player|
